@@ -1,6 +1,16 @@
 # Resultados del Laboratorio 2
 
-Para este ejemplo utilice los threading y multiprocessing. En realidad, la que se deberia usar es threading o asyncio ya que es un problema de I/O porque se debe consultar la base de datos del API. A continuacion se presentan los resultados. 
+Para este ejemplo utilice los threading y multiprocessing. En realidad, la que se deberia usar es threading o asyncio ya que es un problema de I/O porque se debe consultar la base de datos del API. 
+
+Para correr los diferente ejemplos, nada mas seria quitar el comment. 
+
+A continuacion se presentan los resultados. 
+
+## Resultado sin concurrencia
+
+Este es el resultado base:
+
+150 users check in 13.095667600631714 seconds
 
 ## Resultado Threading
 
