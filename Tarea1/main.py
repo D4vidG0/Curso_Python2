@@ -199,6 +199,9 @@ if __name__ == "__main__":
             print("\nERROR OPCION NO VALIDA\n")
             time.sleep(2)
 
+
+#Functions for endpoints
+
     # getheroe()
     # getheroespeed()
     # getheroeroles()
@@ -209,7 +212,7 @@ if __name__ == "__main__":
     # getcountryplayers()
     # getcountrymmr()        
 
-
+#Possible graphics
 
 #country vs average mmr
 #country vs number of players
