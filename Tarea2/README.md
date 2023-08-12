@@ -1,52 +1,35 @@
-# Tarea 1 Consumo de datos de API
+# Tarea 2 Visualizacion de datos de API juego Dota 2
 
 ## Introduccion
 
-Este programa es para la api Open Dota, la cual brinda datos del videojuego Dota 2. Esta Api ofrece 50 000 calls por mes y brinda datos como MMR, paises donde se juega el juego, datos de los heroes que presenta el juego, datos de los equipos profesionales del juego e inclusive se pueden sacar datos de partidas individuales ya sean privados o publicas. 
+Este programa se basa en las funciones creadas en la Tarea 1. Se modificaron dichas funciones para mostrar los datos que me parecieron interesantes. Dichas funciones se encuentran en el archivo Tarea1.py, el cual se importo como modulo en el main. 
 
-El MMR es un numero que indica el nivel de cada jugador, entre mas alto sea este numero, mejor posicionado esta el jugador en el ranking mundial. 
+Tambien se crearon las funciones nuevas para graficar en el main y presentan datos que pueden servir para saber el impacto del juego a nivel mundial y tambien para ayudar a los jugadores nuevos a seleccionar personajes dentro del juego.
 
-La documentacion de la API se encuentra en el siguiente link:
+A continacion se detallan los datos que se seleccionaron, asi como las graficas que decidi mostrar.
 
-https://docs.opendota.com/
+### Datos seleccionados
 
-## Consumo de datos de la API
+Los datos que seleccione fueron por ejemplo: velocidad, fuerza, agilidad, inteligencia; los cuales son atributos que pueden servir para seleccionar un heroe a la hora de jugar el juego. Inclusive hay jugadores que no saben estos datos, ya que no se presentan de forma facil en el juego. Tambien escogi mostrar el pais con mayor cantidad de jugadores y el pais con menor cantidad de jugadores ya que me parecio interesante. 
 
-Se crearon 8 funciones para extraer los datos que me parecieron mas interesantes de esta API y que podrian servirle a los jugadores. Las funciones que se crearon fueron para extraer los datos como: nombre de todos los heroes, estadisticas de cada heroe, paises donde se juega el juego Dota 2 y MMR promedio de cada pais. A continuacion, se detalla cada endpoint que se extrajo. 
+Tambien un dato muy importante es el MMR que es el numero que indica el nivel de cada jugador, y entre mas alto sea, mejor es el nivel del jugador. Dicho esto, escogi mostrar el MMR promedio mundial, esto quiere decir que ese numero es el nivel promedio de cada jugador en todo el mundo. 
 
-### Nombres de los Heroes
+Quise mostrar la cantidad de jugadores que hay en el mundo de este juego, y como se puede observar es una buena base de jugadores.
 
-Con esta funcion, se muestra todos los nombres de cada heroes que presenta el juego. El juego presenta 123 heroes en total, divido en 4 categorias: Fuerza, agilidad, inteligencia y universal. 
+Por ultimo, queria mostrar los datos especificamente de Costa Rica (cantidad de jugadores y nivel MMR promedio). Como podemos observar, los jugadores ticos presentan un nivel promedio del juego. 
 
-### Movimiento de los Heroes
+### Grafica de Top 10 de paises con mas jugadores
 
-Con esta funcion se obtiene la velocidad de movimiento al principio del juego para cada heroe. El numero que se presenta es la velocidad base con la que empieza el heroe y entre mas grande sea el numero, mas rapido se movera por el mapa dicho heroe. 
+Como el API regresaba mucha informacion, decidi mostrar los top 10 o top 5 de datos para que fuera mas comprensible. En esta grafica especifica, se muestran los 10 paises con mayor cantidad de jugadores. Esto es interesante, ya que con esta informacion se puede saber cuales servidores tienen la mayor cantidad de servidores y asi sabemos cuales estan mas congestionados. 
 
-### Roles de cada heroe del juego
+### Grafica de top 5 de paises con mejores jugadores
 
-Esta funcion detalla los roles de cada heroes del juego. Los roles principales son: Carry y Support. Existen otros subroles como: Initiator', 'Durable', 'Disabler', 'Nuker, los cuales se catalogan dependiendo de las habilidades de cada heroe. 
+Aca se muestran los paises donde estan los mejores jugadoes del mundo. Esta nos sirve para ver en cuales servidores son donde estan los mejores jugadores (normalmente el servido de Asia), y ver repeticiones de esa zona del mundo y asi poder mejorar en el juego. 
 
-### Estadisticas de cada heroe
+### Grafica de heroes con mayor fuerza. 
 
-Se crearon 3 funciones para obtener las estadisticas principales de cada heroe. Las 3 estadisticas principales son: Fuerza, agilidad e inteligencias. Las 3 funciones que se crearon muestran por separado la fuerza, agilidad e inteligencia con la que empieza cada heroe. 
+Esta grafica la que quise meter, ya que el atributo de fuerza esta relacionado con la cantidad de vida que tenga ese heroe en el juego. Entonces entre mayor fuerza, mayor cantidad de vida posee ese personaje. Para los jugadores nuevos, este dato puede ser importante ya que presenta los heroes con mayor vida al inicio del juego entonces asi puede seleccionar uno de estos y evitar que los maten mas seguido.
 
-### Numero de jugadores de cada pais
+### Funcionamiento
 
-Otro dato que me parecio relevante es el numero de jugadores de cada pais, por ello cree la funcion que extryera este dato. Y la funcion muestra el numero total de jugador por cada pais del mmundo. 
-
-### MMR promedio de cada pais
-
-Esta funcion obtiene el MMR promedio de cada pais. Como mencione antes, el MMR es el numero que se le asigna a cada jugador y se gana jugando partidas rankeadas del juego. Entre mas alto, mejor es el jugador. 
-
-## Graficas
-
-Algunas de las graficas que se pueden obtener de estos datos son:
-
-1. country vs average mmr
-2. country vs number of players
-3. heroe vs move speed
-4. heroe vs str
-5. Heroe vs int
-6. Heroe vs agi
-
-De esta manera se pueden mostar de manera mas comprensible los datos. 
+Se crearon los menus tipicos para seleccionar los datos que se desean. Lo unico diferente es que si se selecciona una grafica, se debe cerrar la grafica para poder regresar a las opciones del menu. 
